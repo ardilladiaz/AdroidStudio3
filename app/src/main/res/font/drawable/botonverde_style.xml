@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size
+        android:width="315dp"
+        android:height="49dp" /> <!-- Dimensiones del rectángulo -->
+    <corners android:radius="10dp" /> <!-- Modifica el radio según sea necesario -->
+    <solid android:color="@color/verde" /> <!-- Color de fondo de la imagen -->
+</shape>

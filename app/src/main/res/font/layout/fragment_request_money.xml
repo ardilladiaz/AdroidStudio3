@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/requestMoney"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.view.fragment.RequestMoney">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/btnVolverRequest"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/black"
+        app:title="Ingresar dinero"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTitle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackOpacity" />
+
+
+    <Spinner
+        android:id="@+id/spinnerRecibirDinero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textCantidadIngresar"
+            style="@style/style_label_form"
+            android:text="@string/cantidad_ingresar_txt_request"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextMontoIngresarDinero"
+            style="@style/style_input_form_ingresar_dinero"
+            android:layout_width="match_parent"
+            android:hint="0.0"
+            android:textColorHint="@color/semiblackOpacity"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="32sp"
+        android:layout_marginEnd="15sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textNotasTransferencia"
+            style="@style/style_label_form"
+            android:text="@string/notas_transferencia_txt_request"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextNota"
+            style="@style/style_text_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:hint="@string/notas_transferencia_request"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:paddingTop="14dp"
+            android:lines="10" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/btnIngresarDinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botonazul_style"
+            android:drawableStart="@drawable/request_icon"
+            android:drawablePadding="4.38dp"
+            android:gravity="center_vertical"
+            android:paddingStart="85dp"
+            android:text="@string/ingresar_dinero_request_btn"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

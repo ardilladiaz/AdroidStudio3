@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.fragment.SignupPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        tools:context=".LoginPageActivity">
+
+        <TextView
+            android:id="@+id/textTituloLogin"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="30dp"
+            android:text="@string/titulo_signup"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.10" />
+
+        <LinearLayout
+            android:id="@+id/layoutEmailLogin"
+            style="@style/style_layout_form"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28">
+
+            <TextView
+                android:id="@+id/lbNombre"
+                style="@style/style_label_form"
+                android:text="@string/nombre_lb_signup" />
+
+            <EditText
+                android:id="@+id/inputNombre"
+                style="@style/style_input_form"
+                android:autofillHints="emailAddress"
+                android:hint="@string/ingresar_nombre_hint_signup"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutApellidoSignup"
+            style="@style/style_layout_form"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmailLogin">
+
+            <TextView
+                android:id="@+id/textApellidoSignup"
+                style="@style/style_label_form"
+                android:text="@string/apellido_txt_signup" />
+
+            <EditText
+                android:id="@+id/inputApellidoSignup"
+                style="@style/style_input_form"
+                android:autofillHints="name"
+                android:hint="@string/ingresar_apellido_hint_signup"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEmailSignup"
+            style="@style/style_layout_form"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutApellidoSignup">
+
+            <TextView
+                android:id="@+id/textEmailSignup"
+                style="@style/style_label_form"
+                android:text="@string/email_txt_signup" />
+
+            <EditText
+                android:id="@+id/inputEmailSignup"
+                style="@style/style_input_form"
+                android:autofillHints="emailAddress"
+                android:hint="@string/ingresar_email_hint_signup"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPasswordSignup"
+            style="@style/style_layout_form"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmailSignup">
+
+            <TextView
+                android:id="@+id/textPasswordSignup"
+                style="@style/style_label_form"
+                android:text="@string/password_txt_signup" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPasswordSignup"
+                    style="@style/style_input_form"
+                    android:autofillHints="password"
+                    android:hint="@string/ingresar_password_hint_signup"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            style="@style/style_layout_form"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutPasswordSignup">
+
+            <TextView
+                android:id="@+id/lbPassword2"
+                style="@style/style_label_form"
+                android:text="@string/password2_txt_signup" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputPassword2Signup"
+                    style="@style/style_input_form"
+                    android:autofillHints="password"
+                    android:hint="@string/reingresar_password_hint_signup"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/buttonLoginSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/botonazul_style"
+            android:text="@string/login_signup_btn"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+        <TextView
+            android:id="@+id/enlaceYaTieneCuentaSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingBottom="32dp"
+            android:text="@string/ya_tienes_una_cuenta_signup"
+            android:textColor="@color/azul"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLoginSignup" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
