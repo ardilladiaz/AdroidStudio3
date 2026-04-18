@@ -1,4 +1,4 @@
-# Documentación Técnica: Evaluación Integradora Módulo 6
+# Evaluación Integradora Módulo 6
 **Proyecto:** Alke Wallet  
 **Desarrollador:** Cinthia Díaz 
 
