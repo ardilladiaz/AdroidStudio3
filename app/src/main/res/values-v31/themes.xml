@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AlkeWallet." parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">@color/celeste</item>
+    </style>
+</resources>

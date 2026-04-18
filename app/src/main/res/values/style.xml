@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para el texto -->
+    <style name="letra_blanca">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="letra_negra">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- estilo para el logo de la pantalla de inicio -->
+    <style name="icon_style">
+        <item name="android:background">@drawable/icono_style</item>
+        <item name="android:src">@drawable/path</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:padding">25dp</item>
+    </style>
+
+    <style name="icono_ingreso_envio">
+        <item name="android:background">@drawable/fondo_redondo</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="style_layout_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">30sp</item>
+        <item name="android:layout_marginRight">30sp</item>
+    </style>
+
+    <style name="style_label_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingBottom">8sp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_input_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">#1A1A1A</item>
+        <item name="android:textSize">14sp</item> <!-- Tamaño del texto del placeholder -->
+        <item name="android:paddingLeft">14sp</item>
+        <item name="android:textStyle">normal</item> <!-- Estilo del texto del placeholder -->
+        <item name="android:background">@drawable/edittext_style</item>
+
+    </style>
+
+    <style name="style_text_form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">#1A1A1A</item>
+        <item name="android:textSize">14sp</item> <!-- Tamaño del texto del placeholder -->
+        <item name="android:paddingLeft">14sp</item>
+        <item name="android:textStyle">normal</item> <!-- Estilo del texto del placeholder -->
+        <item name="android:background">@drawable/edittext_style</item>
+
+    </style>
+
+
+    <style name="style_input_form_ingresar_dinero">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">16sp</item> <!-- Tamaño del texto del placeholder -->
+        <item name="android:paddingLeft">14sp</item>
+        <item name="android:textStyle">normal</item> <!-- Estilo del texto del placeholder -->
+        <item name="android:background">@drawable/edittext_backgraound_gris</item>
+
+    </style>
+
+    <style name="style_input_form_enviar_dinero">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">16sp</item> <!-- Tamaño del texto del placeholder -->
+        <item name="android:paddingLeft">14sp</item>
+        <item name="android:textStyle">normal</item> <!-- Estilo del texto del placeholder -->
+        <item name="android:background">@drawable/edittext_backgraound_gris</item>
+    </style>
+
+    <style name="ToolbarTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/jua</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+        <item name="boxStrokeColor">@color/celeste</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.App.CustomBorderedTextInputLayout
+        </item>
+
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CustomBorderedTextInputLayout" parent="">
+        <item name="cornerSize">16dp</item> <!-- Radio de los bordes -->
+    </style>
+
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/spash_screen</item>
+    </style>
+</resources>
