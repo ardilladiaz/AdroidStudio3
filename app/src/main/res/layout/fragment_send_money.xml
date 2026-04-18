@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sendMoney"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.fragment.SendMoney"
+    android:orientation="vertical"
+
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/volverSendMoney"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Enviar Dinero"
+        android:background="@color/white"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackOpacity"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerEnviarDinero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp">
+
+        <TextView
+            android:id="@+id/textCantidadIngresar"
+            style="@style/style_label_form"
+            android:text="@string/cantidad_a_transferir_send"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextMontoEnviarDinero"
+            style="@style/style_input_form_enviar_dinero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0.0"
+            android:textColorHint="@color/semiblackOpacity"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="32sp">
+
+        <TextView
+            android:id="@+id/textNotasTransferencia"
+            style="@style/style_label_form"
+            android:text="@string/notas_transferencia_send"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextNotaEnviarDinero"
+            style="@style/style_text_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notas_send"
+            android:autofillHints="emailAddress"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:gravity="start|top"
+            android:paddingTop="14dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/btnEnviarDinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botonverde_style"
+            android:drawableStart="@drawable/send_icon"
+            android:drawablePadding="4.38dp"
+            android:gravity="center_vertical"
+            android:paddingStart="95dp"
+            android:text="@string/enviar_dinero_send_btn"
+            style="@style/letra_negra"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".presentation.view.fragment.LoginPage">
+
+    <TextView
+        android:id="@+id/textTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_marginStart="30dp"
+        android:lineSpacingExtra="30dp"
+        android:text="@string/titulopantalla3"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <LinearLayout
+        android:id="@+id/layoutEmailLogin"
+        style="@style/style_layout_form"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+
+        <TextView
+            android:id="@+id/textEmailLogin"
+            style="@style/style_label_form"
+            android:text="@string/email_lb_loguea" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/style_input_form"
+            android:autofillHints="emailAddress"
+            android:hint="@string/ingresa_tu_email_hint_logea"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPasswordLogin"
+        style="@style/style_layout_form"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmailLogin"
+        >
+
+        <TextView
+            android:id="@+id/textPasswordLogin"
+            style="@style/style_label_form"
+            android:text="@string/password_logea_txt" />
+
+        <EditText
+            android:id="@+id/editTextPasswordLogin"
+            style="@style/style_input_form"
+            android:autofillHints="password"
+            android:hint="@string/password_hint_logea"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enlaceOlvidePassaword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/olvidaste_password_enlace_logea"
+        android:textColor="@color/azul"
+        app:layout_constraintEnd_toEndOf="@+id/layoutPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPasswordLogin"
+        />
+
+    <Button
+        android:id="@+id/buttonLoginLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonceleste_style"
+        android:text="@string/login_btn_logea"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
+
+    <TextView
+        android:id="@+id/enlaceCrearCuentaLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_una_nueva_cuenta_enlace_logea"
+        android:textColor="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

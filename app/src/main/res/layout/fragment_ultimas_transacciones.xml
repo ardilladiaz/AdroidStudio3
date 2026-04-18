@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".presentation.view.fragment.UltimasTransacciones">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tarjeta Yara -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tarjetaYara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenYara"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@mipmap/pp2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtYaraMovimiento"
+                    style="@style/letra_negra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="@string/nombre1_fragment"
+                    app:layout_constraintStart_toEndOf="@+id/imagenYara"
+                    app:layout_constraintTop_toTopOf="@+id/imagenYara"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtfechaYara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha_fragment"
+                    android:textColor="@color/semiblackOpacity"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenYara"
+                    app:layout_constraintStart_toStartOf="@+id/txtYaraMovimiento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtYaraMovimiento" />
+
+                <ImageView
+                    android:id="@+id/IconoEnvioYara"
+                    style="@style/icono_ingreso_envio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/send_icon_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenYara"
+                    app:layout_constraintEnd_toEndOf="@+id/imagenYara"
+                    app:layout_constraintStart_toStartOf="@+id/imagenYara"
+                    app:layout_constraintTop_toTopOf="@+id/imagenYara" />
+
+                <TextView
+                    android:id="@+id/MontoEnvioYara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/monto1_fragment"
+                    android:textColor="@color/semiblack"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta Sara -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tarjetaSara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenSara"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@mipmap/pp1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSaraMovimiento"
+                    style="@style/letra_negra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="@string/nombre2_fragment"
+                    app:layout_constraintStart_toEndOf="@+id/imagenSara"
+                    app:layout_constraintTop_toTopOf="@+id/imagenSara"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtfechaSara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha2_fragment"
+                    android:textColor="@color/semiblackOpacity"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenSara"
+                    app:layout_constraintStart_toStartOf="@+id/txtSaraMovimiento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSaraMovimiento" />
+
+                <ImageView
+                    android:id="@+id/IconoEnvioSara"
+                    style="@style/icono_ingreso_envio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/request_icon2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenSara"
+                    app:layout_constraintEnd_toEndOf="@+id/imagenSara"
+                    app:layout_constraintStart_toStartOf="@+id/imagenSara"
+                    app:layout_constraintTop_toTopOf="@+id/imagenSara" />
+
+                <TextView
+                    android:id="@+id/MontoEnvioSara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/monto2_fragment"
+                    android:textColor="@color/semiblack"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta Ahmad -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tarjetaAhmad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenAhmad"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@mipmap/pp3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAhmadMovimiento"
+                    style="@style/letra_negra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="@string/nombre3_fragment"
+                    app:layout_constraintStart_toEndOf="@+id/imagenAhmad"
+                    app:layout_constraintTop_toTopOf="@+id/imagenAhmad"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtfechaAhmad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha3_fragment"
+                    android:textColor="@color/semiblackOpacity"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenAhmad"
+                    app:layout_constraintStart_toStartOf="@+id/txtAhmadMovimiento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAhmadMovimiento" />
+
+                <ImageView
+                    android:id="@+id/IconoEnvioAhmad"
+                    style="@style/icono_ingreso_envio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/request_icon2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenAhmad"
+                    app:layout_constraintEnd_toEndOf="@+id/imagenAhmad"
+                    app:layout_constraintStart_toStartOf="@+id/imagenAhmad"
+                    app:layout_constraintTop_toTopOf="@+id/imagenAhmad" />
+
+                <TextView
+                    android:id="@+id/MontoEnvioAhmad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/monto3_fragment"
+                    android:textColor="@color/semiblack"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta Reem -->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tarjetaMiInformacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenReem"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@mipmap/pp4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtReemMovimiento"
+                    style="@style/letra_negra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="@string/nombre4_fragemnt"
+                    app:layout_constraintStart_toEndOf="@+id/imagenReem"
+                    app:layout_constraintTop_toTopOf="@+id/imagenReem"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtfechaReem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha4_fragment"
+                    android:textColor="@color/semiblackOpacity"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenReem"
+                    app:layout_constraintStart_toStartOf="@+id/txtReemMovimiento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtReemMovimiento" />
+
+                <ImageView
+                    android:id="@+id/IconoEnvioReem"
+                    style="@style/icono_ingreso_envio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/send_icon_yellow"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenReem"
+                    app:layout_constraintEnd_toEndOf="@+id/imagenReem"
+                    app:layout_constraintStart_toStartOf="@+id/imagenReem"
+                    app:layout_constraintTop_toTopOf="@+id/imagenReem" />
+
+                <TextView
+                    android:id="@+id/MontoEnvioReem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/monto4_fragment"
+                    android:textColor="@color/semiblack"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tarjeta Hiba -->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tarjetaHiba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenHiba"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@mipmap/pp5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtHibaMovimiento"
+                    style="@style/letra_negra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:text="@string/nombre5_fragment"
+                    app:layout_constraintStart_toEndOf="@+id/imagenHiba"
+                    app:layout_constraintTop_toTopOf="@+id/imagenHiba"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtfechaHiba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fecha5_fragment"
+                    android:textColor="@color/semiblackOpacity"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenHiba"
+                    app:layout_constraintStart_toStartOf="@+id/txtHibaMovimiento"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHibaMovimiento" />
+
+                <ImageView
+                    android:id="@+id/IconoEnvioHiba"
+                    style="@style/icono_ingreso_envio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/request_icon2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagenHiba"
+                    app:layout_constraintEnd_toEndOf="@+id/imagenHiba"
+                    app:layout_constraintStart_toStartOf="@+id/imagenHiba"
+                    app:layout_constraintTop_toTopOf="@+id/imagenHiba" />
+
+                <TextView
+                    android:id="@+id/MontoEnvioHiba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/monto5_fragment"
+                    android:textColor="@color/semiblack"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
